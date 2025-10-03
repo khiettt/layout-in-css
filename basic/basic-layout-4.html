@@ -6,29 +6,35 @@
     <title>Basic Layout 4</title>
     <link rel="stylesheet" href="../style.css">
     <style>
-       body {
+      /* Doe hier jouw ding! */
+      body {
         display: grid;
-        grid-template-columns: repeat(4, 1fr);
-        grid-template-rows: repeat(5, 1fr);
-        gap: 10px;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(4, 1fr);
+        gap: 1em;
+
+        grid-template-areas: 
+        "main main"
+        "header header"
+        "footer footer"
+        "nav nav"
       }
 
       header {
-        
-      }
-
-      nav {
-
+        grid-area: 1 / 3 / 3 / 4;
       }
 
       main {
+        grid-area: 1 / 1 / 3 / 3;
+      }
 
+      nav {
+        grid-area: 3 / 3 / 5 / 4;
       }
 
       footer {
-        
+        grid-area: 3 / 1 / 5 / 3;
       }
-      /* Doe hier jouw ding! */
     </style>
   </head>
   <body id="basic-layout-4">
