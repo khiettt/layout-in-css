@@ -7,14 +7,41 @@
     <link rel="stylesheet" href="../style.css">
     <style>
       /* Doe hier jouw ding! */
+      body {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(5, 1fr);
+        gap: 1em;
+      }
+
+      header {
+        grid-area: 1 / 1 / 2 / 2;
+      }
+
+      nav {
+        display: flex;               /* Maak van nav een flexcontainer */
+        justify-content: center;     /* Horizontaal centreren */
+        align-items: center;         /* Verticaal centreren (optioneel) */
+        gap: 1rem;
+        grid-area: 1 / 2 / 2 / 5;
+      }
+
+      main { 
+        grid-area: 2 / 1 / 5 / 5;
+      }
+
+      footer {
+        grid-area: 5 / 1 / 6 / 5;
+      }
+
     </style>
   </head>
   <body id="basic-layout-9">
     <header><h1>Basic Layout 9</h1></header>
     <nav>
-      <a href="#">Home</a>
-      <a href="#">Over ons</a>
-      <a href="#">Contact</a>
+      <button><a href="#">Home</a></button>
+      <button><a href="#">Over ons</a></button>
+      <button><a href="#">Contact</a></button>
     </nav>
     <main><a href="../index.html">Terug naar het overzicht</a></main>
     <footer></footer>

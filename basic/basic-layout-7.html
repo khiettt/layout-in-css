@@ -6,23 +6,34 @@
     <title>Basic Layout 7</title>
     <link rel="stylesheet" href="../style.css">
     <style>
+
       main {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(5, 1fr);
         padding: 1em;
       }
       nav {
+        display: grid;
+        justify-content: flex-end;
+        align-items: flex-end;
+        grid-area: 1 / 4 / 2 / 4;
         min-height: 5em;
       }
       p {
+        font-family: sans-serif;
+        min-width: 16px;
+        inline-size: 140%;
         margin: 0;
+        
       }
-      
       /* Doe hier jouw ding! */
     </style>
   </head>
   <body id="basic-layout-7">
     <main>
-      <nav><a href="../index.html">Terug naar het overzicht</a></nav>
       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+      <nav><a href="../index.html">Terug naar het overzicht</a></nav>
     </main>
   </body>
 </html>
